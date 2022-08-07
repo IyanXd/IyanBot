@@ -185,7 +185,7 @@ let handler = async (m, { conn, usedPrefix: _p }) => {
                displayText: 'Owner',
                id: '.owner',
              }
-           }
+           },
            {
              quickReplyButton: {
                displayText: 'All Menu',
