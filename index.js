@@ -233,7 +233,7 @@ console.log(color(tampilTanggal, "pink"));
 console.log(color(tampilWaktu, "pink"));
 console.log(color(tampilHari, "pink"));
 
-CFonts.say('OWNER\nBY Deffri Gans', {
+CFonts.say('OWNER\nBY Iyan Gans', {
   font: 'chrome',
   align: 'center',
   gradient: ['red', 'magenta']
