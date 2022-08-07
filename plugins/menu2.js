@@ -196,7 +196,7 @@ let handler = async (m, { conn, usedPrefix: _p }) => {
        }
      }), { userJid: m.sender, quoted: m });
     //conn.reply(m.chat, text.trim(), m)
-   let audio = fs.readFileSync('./mp3/asuuu.mp3')
+   let audio = fs.readFileSync('./mp3/asuuu.opus')
    await conn.sendFile(m.chat, audio, 'error.mp3', null, m, true)
     return await conn.relayMessage(
          m.chat,
