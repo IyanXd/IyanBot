@@ -169,7 +169,7 @@ let replace = {
       readmore: readMore
     }
     text = text.replace(new RegExp(`%(${Object.keys(replace).sort((a, b) => b.length - a.length).join`|`})`, 'g'), (_, name) => '' + replace[name])
-let url = `https://telegra.ph/file/01a5b3b1fc41ccaa284f8.png`
+let url = `https://telegra.ph/file/c2d8af842fb7b0a59760c.jpg`
 let res = await fetch(url)
 let buffer = await res.buffer()
 let message = await prepareWAMessageMedia({ image: buffer }, { upload: conn.waUploadToServer })
@@ -181,12 +181,12 @@ let message = await prepareWAMessageMedia({ image: buffer }, { upload: conn.waUp
                             hydratedFooterText: com.trim(),
                             hydratedButtons: [{
                                 urlButton: {
-                                    displayText: 'YouTube',
+                                    displayText: 'Jangan Dipencet',
                                     url: linkyt
                                 }
                             }, {
                                 urlButton: {
-                                    displayText: 'INSTAGRAM',
+                                    displayText: 'Instagram',
                                     url: linkig
                                 }
                             }, {

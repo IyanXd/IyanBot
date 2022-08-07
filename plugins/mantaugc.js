@@ -14,7 +14,7 @@ let codegc = args[0]
         pp = await conn.profilePictureUrl(codegc, 'image')
     } catch (e) {
     } finally {
-        let { expired, viewonce, antiSticker, antiBadword, isBanned, welcome, detect, sWelcome, sBye, sPromote, sDemote, antiLink } = global.db.data.chats[codegc]
+        let {expired, viewonce, antiSticker, antiBadword, isBanned, welcome, detect, sWelcome, sBye, sPromote, sDemote, antiLink} = global.db.data.chats[codegc]
         let groupAdmins = participants.filter(p => p.admin)
         let listAdmin = groupAdmins.map((v, i) => `${i + 1}. @${v.id.split('@')[0]}`).join('\n')
        // const owner = groupMetadata.owner || groupAdmins.find(p => p.admin === 'superadmin')?.id || codegc.split`-`[0] + '@s.whatsapp.net'

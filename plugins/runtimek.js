@@ -24,9 +24,9 @@ let _uptime = process.uptime() * 1000
   let pepe = 'https://telegra.ph/file/2e2eb7d093fec08fd00d4.jpg'
   let baper = await fetch(pepe).then(a => a.buffer())
 
-  let arietube = '6289509960601@s.whatsapp.net'
-  let a = await conn.profilePictureUrl(conn.user.jid, 'image').catch((_) => "https://telegra.ph/file/057b8dff2f6ba7d4553ae.jpg")
-  let b = await conn.profilePictureUrl(owner[0]+'@s.whatsapp.net', 'image').catch((_) => "https://telegra.ph/file/057b8dff2f6ba7d4553ae.jpg")
+  let arietube = '62895323413434@s.whatsapp.net'
+  let a = await conn.profilePictureUrl(conn.user.jid, 'image').catch((_) => "https://telegra.ph/file/c2d8af842fb7b0a59760c.jpg")
+  let b = await conn.profilePictureUrl(owner[0]+'@s.whatsapp.net', 'image').catch((_) => "https://telegra.ph/file/c2d8af842fb7b0a59760c.jpg")
   let c = pickRandom([a, b])
   let e = await fetch(c).then(a => a.buffer())
   let prepare = await require('@adiwajshing/baileys').
@@ -42,7 +42,7 @@ let _uptime = process.uptime() * 1000
   products:[{productId:'7487741964584083'}]}],
   headerImage: { productId: '7487741964584083',
   jpegThumbnail: baper },
-  businessOwnerJid: `6289509960601@s.whatsapp.net`
+  businessOwnerJid: `62895323413434@s.whatsapp.net`
   },
   footerText: '',
   }},{})

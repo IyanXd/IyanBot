@@ -48,17 +48,17 @@ let message = await prepareWAMessageMedia({ image: buffer }, { upload: conn.waUp
                             hydratedFooterText: kocok,
                             hydratedButtons: [{
                                 urlButton: {
-                                    displayText: 'YouTube',
+                                    displayText: 'Jangan Dipencet',
                                     url: linkyt
                                 }
                             }, {
                                 urlButton: {
-                                    displayText: 'INSTAGRAM',
+                                    displayText: 'Instagram',
                                     url: linkig
                                 }
                             }, {
                                 quickReplyButton: {
-                                    displayText: 'INVENTORY',
+                                    displayText: 'Inventory',
                                     id: '/inv'
                                 }
                             }]

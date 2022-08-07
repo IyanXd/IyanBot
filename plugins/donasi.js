@@ -19,7 +19,7 @@ Thanks!`
 const linkyt = `${ytlu}`
 const linkig = `${instalu}`
 const upt = `BOT Active During ${uptime}`
- let url = `https://telegra.ph/file/2df193d98191cdf1cf27e.jpg`
+ let url = `https://telegra.ph/file/4cc9035f2b7395f9cd456.jpg`
 let res = await fetch(url)
 let buffer = await res.buffer()
 let message = await prepareWAMessageMedia({ image: buffer }, { upload: conn.waUploadToServer })
@@ -31,17 +31,17 @@ let message = await prepareWAMessageMedia({ image: buffer }, { upload: conn.waUp
                             hydratedFooterText:upt,
                             hydratedButtons: [{
                                 urlButton: {
-                                    displayText: 'YouTube',
+                                    displayText: 'Jangan Pencet',
                                     url: linkyt
                                 }
                             }, {
                                 urlButton: {
-                                    displayText: 'INSTAGRAM',
+                                    displayText: 'Instagram',
                                     url: linkig
                                 }
                             }, {
                                 quickReplyButton: {
-                                    displayText: 'OWNER',
+                                    displayText: 'Owner',
                                     id: '/owner'
                                 }
                             }, {

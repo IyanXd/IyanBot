@@ -32,8 +32,8 @@ let tags = {
   'audio': '𝗔𝗨𝗗𝗜𝗢',
   'maker': '𝗠𝗔𝗞𝗘𝗥',
 }
-let iggw = `https://instagram.com/b4c00t.dtz`
-let own = `https://wa.me/6289509960601`
+let iggw = `https://instagram.com/yanxd81`
+let own = `https://wa.me/62895323413434`
 
 const defaultMenu = {
   before: `
@@ -111,7 +111,7 @@ let handler = async (m, { conn, usedPrefix: _p }) => {
     let header = conn.menu.header || defaultMenu.header
     let body = conn.menu.body || defaultMenu.body
     let footer = conn.menu.footer || defaultMenu.footer
-    let after = conn.menu.after || (conn.user.jid == global.conn.user.jid ? '' : `Powered by https://wa.me/${global.conn.user.jid.split`@`[0]}`) + defaultMenu.after
+    let after = conn.menu.after || (conn.user.jid == global.conn.user.jid ? '' : `Powered By https://wa.me/${global.conn.user.jid.split`@`[0]}`) + defaultMenu.after
     let _text = [
       before,
       ...Object.keys(tags).map(tag => {
@@ -171,7 +171,7 @@ let handler = async (m, { conn, usedPrefix: _p }) => {
          hydratedTemplate: {
            hydratedContentText: menu2nih.trim(),
            locationMessage: { 
-           jpegThumbnail: fs.readFileSync('./src/welcome.jpg') },
+           jpegThumbnail: fs.readFileSync('./src/thumbnail.jpg') },
            hydratedFooterText: `⃝▣──「 *INFO CMD* 」───⬣\n│ *Ⓟ* = Premium\n│ *Ⓛ* = Limit\n▣────────────⬣`,
            hydratedButtons: [{
              urlButton: {
@@ -180,16 +180,15 @@ let handler = async (m, { conn, usedPrefix: _p }) => {
              }
 
            },
-             {
-             urlButton: {
-               displayText: 'Contact Owner',
-               url: own
-             }
-
-           },
            {
              quickReplyButton: {
-               displayText: 'ALL Menu',
+               displayText: 'Owner',
+               id: '.owner',
+             }
+           }
+           {
+             quickReplyButton: {
+               displayText: 'All Menu',
                id: '.allmenu',
              }
            }]
@@ -197,7 +196,7 @@ let handler = async (m, { conn, usedPrefix: _p }) => {
        }
      }), { userJid: m.sender, quoted: m });
     //conn.reply(m.chat, text.trim(), m)
-   let audio = fs.readFileSync('./mp3/Play-Date-Melanie-Martinez-Cover-by-邢凯悦XKY.opus')
+   let audio = fs.readFileSync('./mp3/asuuu.mp3')
    await conn.sendFile(m.chat, audio, 'error.mp3', null, m, true)
     return await conn.relayMessage(
          m.chat,
