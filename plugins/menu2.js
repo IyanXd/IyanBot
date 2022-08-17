@@ -111,7 +111,7 @@ let handler = async (m, { conn, usedPrefix: _p }) => {
     let header = conn.menu.header || defaultMenu.header
     let body = conn.menu.body || defaultMenu.body
     let footer = conn.menu.footer || defaultMenu.footer
-    let after = conn.menu.after || (conn.user.jid == global.conn.user.jid ? '' : `Powered By https://wa.me/${global.conn.user.jid.split`@`[0]}`) + defaultMenu.after
+    let after = conn.menu.after || (conn.user.jid == global.conn.user.jid ? '' : `Powered by https://wa.me/${global.conn.user.jid.split`@`[0]}`) + defaultMenu.after
     let _text = [
       before,
       ...Object.keys(tags).map(tag => {
@@ -171,7 +171,7 @@ let handler = async (m, { conn, usedPrefix: _p }) => {
          hydratedTemplate: {
            hydratedContentText: menu2nih.trim(),
            locationMessage: { 
-           jpegThumbnail: fs.readFileSync('./src/thumbnail.jpg') },
+           jpegThumbnail: fs.readFileSync('./src/welcome.jpg') },
            hydratedFooterText: `⃝▣──「 *INFO CMD* 」───⬣\n│ *Ⓟ* = Premium\n│ *Ⓛ* = Limit\n▣────────────⬣`,
            hydratedButtons: [{
              urlButton: {
@@ -180,11 +180,12 @@ let handler = async (m, { conn, usedPrefix: _p }) => {
              }
 
            },
-           {
-             quickReplyButton: {
-               displayText: 'Owner',
-               id: '.owner',
+             {
+             urlButton: {
+               displayText: 'Contact Owner',
+               url: own
              }
+
            },
            {
              quickReplyButton: {
